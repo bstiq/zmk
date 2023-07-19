@@ -14,7 +14,7 @@
 
 #include <pmw33xx/pmw33xx.h>
 
-#define SCROLL_DIV_FACTOR 10
+#define SCROLL_DIV_FACTOR 40
 /* #define SCROLL_LAYER_INDEX 4 */
 #define SCROLL_LAYER_INDEX COND_CODE_0(DT_INST_NODE_HAS_PROP(0, scroll_layer), (255), \
                                        (DT_INST_PROP(0, scroll_layer)))

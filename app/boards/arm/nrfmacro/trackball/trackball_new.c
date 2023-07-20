@@ -2,7 +2,7 @@
 #define DT_DRV_COMPAT pixart_pmw3360
 #include <pixart/pmw3360/pmw3360.h>
 #elif defined(CONFIG_PAW3395)
-#define DT_DRV_COMPAT pixart_paw3395
+#define DT_DRV_COMPAT ixart_paw3395
 #include <pixart/paw3395/paw3395.h>
 #elif defined(CONFIG_PMW3610)
 #define DT_DRV_COMPAT pixart_pmw3610
@@ -20,7 +20,7 @@
 #include <zmk/events/endpoint_selection_changed.h>
 
 
-#define SCROLL_DIV_FACTOR 2
+#define SCROLL_DIV_FACTOR 500
 /* #define SCROLL_LAYER_INDEX 4 */
 #define SCROLL_LAYER_INDEX COND_CODE_0(DT_INST_NODE_HAS_PROP(0, scroll_layer), (255), \
                                        (DT_INST_PROP(0, scroll_layer)))

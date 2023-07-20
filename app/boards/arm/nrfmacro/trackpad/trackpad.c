@@ -8,7 +8,7 @@
 #include <zmk/keymap.h>
 #include <dt-bindings/zmk/mouse.h>
 
-#define SCROLL_DIV_FACTOR 5
+#define SCROLL_DIV_FACTOR 2
 #define SCROLL_LAYER_INDEX COND_CODE_0(DT_INST_NODE_HAS_PROP(0, scroll_layer), (255), \
                                        (DT_INST_PROP(0, scroll_layer)))
 

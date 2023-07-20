@@ -20,7 +20,7 @@
 #include <zmk/events/endpoint_selection_changed.h>
 
 
-#define SCROLL_DIV_FACTOR 500
+#define SCROLL_DIV_FACTOR 5
 /* #define SCROLL_LAYER_INDEX 4 */
 #define SCROLL_LAYER_INDEX COND_CODE_0(DT_INST_NODE_HAS_PROP(0, scroll_layer), (255), \
                                        (DT_INST_PROP(0, scroll_layer)))

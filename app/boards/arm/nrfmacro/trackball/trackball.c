@@ -22,7 +22,7 @@
 #define CPI_DIVIDOR COND_CODE_0(DT_INST_NODE_HAS_PROP(0, cpi_dividor), (1), \
                                        (DT_INST_PROP(0, cpi_dividor)))
 
-
+blabla test problem
 /* #if IS_ENABLED(CONFIG_SENSOR_LOG_LEVEL_DBG) */
 // in us
 static int64_t last_interrupt_time = 0;

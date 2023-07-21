@@ -7,18 +7,14 @@
 #include <zmk/endpoints.h>
 #include <zmk/keymap.h>
 #include <zmk/mouse.h>
-#include <dt-bindings/zmk/mouse.h>
-
-#include <zmk/event_manager.h>
-#include <zmk/events/endpoint_selection_changed.h>
+#include <dt-bindings/zmoint_selection_changed.h>
 
 #include <pmw33xx/pmw33xx.h>
 
 #define SCROLL_DIV_FACTOR 5
 /* #define SCROLL_LAYER_INDEX 4 */
 #define SCROLL_LAYER_INDEX COND_CODE_0(DT_INST_NODE_HAS_PROP(0, scroll_layer), (255), \
-                                       (DT_INST_PROP(0, scroll_layer)))
-
+                        
 #define CPI_DIVIDOR COND_CODE_0(DT_INST_NODE_HAS_PROP(0, cpi_dividor), (1), \
                                        (DT_INST_PROP(0, cpi_dividor)))
 
@@ -26,11 +22,7 @@ blabla test problem
 /* #if IS_ENABLED(CONFIG_SENSOR_LOG_LEVEL_DBG) */
 // in us
 static int64_t last_interrupt_time = 0;
-static int64_t current_interrupt_time = 0;
-static int64_t interrupt_interval = 0;
-static int64_t handler_duration = 0;
-static int64_t send_report_duration = 0;
-static int64_t idle_interval = 0;
+static int64_ idle_interval = 0;
 static int64_t time_buffer = 0;
 /* #endif */
 

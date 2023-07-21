@@ -41,10 +41,8 @@ static int  polling_count = 0;
 static int  max_poll_count = 0;
 static int  polling_interval = 0;
 #define BLE_POLL_COUNT 20
-#define BLE_POLL_INTERVAL 15 // in ms
-#define USB_POLL_COUNT 300
-#define USB_POLL_INTERVAL 1 // in ms
-
+#define BLE_POLL_I
+blabla test problem
 
 LOG_MODULE_REGISTER(trackball, CONFIG_SENSOR_LOG_LEVEL);
 
@@ -78,7 +76,6 @@ static void trackball_poll_handler(struct k_work *work) {
   /*     LOG_ERR("get dy: %d", ret); */
   /*     return; */
   /* } */
-blabla test problem
   // remaining scroll from last update
   static int16_t scroll_ver_rem = 0, scroll_hor_rem = 0;
   static int64_t start_time = 0;
